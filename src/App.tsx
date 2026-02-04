@@ -105,6 +105,7 @@ export default function App() {
         <div className="max-w-2xl mx-auto">
           <h2 className="text-3xl md:text-5xl text-center mb-4 text-gray-800 font-serif text-shadow-soft leading-tight">
             Invia la tua partecipazione entro il
+          //fateci saperese ci sarete
           </h2>
           <p className="text-center w-full text-5xl min-[450px]:text-6xl md:text-8xl text-rose-600 font-bold font-numbers tracking-tight leading-none my-4">
             31 04 2026
@@ -226,8 +227,26 @@ export default function App() {
                   <div className="flex items-start gap-4 pl-2">
                     <MapPin className="w-8 h-8 text-rose-500 mt-1" />
                     <div>
-                      <p className="text-3xl font-medium font-serif underline decoration-rose-200">Pieve di S. Giovanni Battista</p>
-                      <p className="text-xl text-gray-600 italic font-serif mt-1">Piazza Cavour, 10, San Giovanni Valdarno</p>
+                      <p className="text-3xl font-medium font-serif underline decoration-rose-200">
+                        <a
+                          href="https://maps.app.goo.gl/P5nni7jj33ido3Mu5"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-rose-600 hover:text-rose-700 underline decoration-rose-300 transition-colors"
+                        >
+                          Pieve di San Giovanni Battista
+                        </a>
+                      </p>
+                      <p className="text-xl text-gray-600 italic font-serif mt-1">
+                        <a
+                          href="https://maps.app.goo.gl/P5nni7jj33ido3Mu5"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-rose-600 hover:text-rose-700 underline decoration-rose-300 transition-colors"
+                        >
+                          Piazza Cavour, 10, San Giovanni Valdarno
+                        </a>
+                      </p>
                     </div>
                   </div>
                 </CardContent>
@@ -245,7 +264,16 @@ export default function App() {
                   <div className="flex items-start gap-4 pl-2">
                     <MapPin className="w-8 h-8 text-rose-500 mt-1" />
                     <div>
-                      <p className="text-3xl font-medium font-serif underline decoration-rose-200">Sereto Base Scout Agesci</p>
+                      <p className="text-3xl font-medium font-serif underline decoration-rose-200">
+                        <a
+                          href="https://maps.app.goo.gl/sLmr8CeNQErMnqmR7"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-rose-600 hover:text-rose-700 underline decoration-rose-300 transition-colors"
+                        >
+                          Sereto Base Scout Agesci
+                        </a>
+                      </p>
                       <p className="text-xl text-gray-600 italic font-serif mt-1">Via Chiantigiana, Cavriglia AR</p>
                     </div>
                   </div>
