@@ -227,26 +227,19 @@ export default function App() {
                   <div className="flex items-start gap-4 pl-2">
                     <MapPin className="w-8 h-8 text-rose-500 mt-1" />
                     <div>
-                      <p className="text-3xl font-medium font-serif underline decoration-rose-200">
-                        <a
-                          href="https://maps.app.goo.gl/P5nni7jj33ido3Mu5"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="text-rose-600 hover:text-rose-700 underline decoration-rose-300 transition-colors"
-                        >
+                      <a
+                        href="https://maps.app.goo.gl/P5nni7jj33ido3Mu5"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="hover:text-rose-700 underline decoration-rose-300 transition-colors"
+                      >
+                        <p className="text-3xl font-medium font-serif underline decoration-rose-200" >
                           Pieve di San Giovanni Battista
-                        </a>
-                      </p>
-                      <p className="text-xl text-gray-600 italic font-serif mt-1">
-                        <a
-                          href="https://maps.app.goo.gl/P5nni7jj33ido3Mu5"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="text-rose-600 hover:text-rose-700 underline decoration-rose-300 transition-colors"
-                        >
+                        </p>
+                        <p className="text-xl text-gray-600 italic font-serif mt-1">
                           Piazza Cavour, 10, San Giovanni Valdarno
-                        </a>
-                      </p>
+                        </p>
+                      </a>
                     </div>
                   </div>
                 </CardContent>
@@ -264,17 +257,19 @@ export default function App() {
                   <div className="flex items-start gap-4 pl-2">
                     <MapPin className="w-8 h-8 text-rose-500 mt-1" />
                     <div>
-                      <p className="text-3xl font-medium font-serif underline decoration-rose-200">
-                        <a
-                          href="https://maps.app.goo.gl/sLmr8CeNQErMnqmR7"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="text-rose-600 hover:text-rose-700 underline decoration-rose-300 transition-colors"
-                        >
+                      <a
+                        href="https://maps.app.goo.gl/sLmr8CeNQErMnqmR7"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="hover:text-rose-700 underline decoration-rose-300 transition-colors"
+                      >
+                        <p className="text-3xl font-medium font-serif underline decoration-rose-200">
                           Sereto Base Scout Agesci
-                        </a>
-                      </p>
-                      <p className="text-xl text-gray-600 italic font-serif mt-1">Via Chiantigiana, Cavriglia AR</p>
+                        </p>
+                        <p className="text-xl text-gray-600 italic font-serif mt-1">
+                          Via Chiantigiana, Cavriglia AR
+                        </p>
+                      </a>
                     </div>
                   </div>
                 </CardContent>
@@ -318,6 +313,6 @@ export default function App() {
           <p className="font-numbers text-2xl">Claudia & Lorenzo • 13 06 2026</p>
         </div>
       </footer>
-    </div>
+    </div >
   );
 }
