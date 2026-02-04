@@ -84,10 +84,10 @@ export default function App() {
           <div className="mb-8">
             <Heart className="w-10 h-10 mx-auto mb-6 text-rose-500 drop-shadow-sm" />
             <h1 className="text-red-600 text-6xl min-[400px]:text-7xl md:text-9xl font-serif mb-6 leading-[0.9] md:leading-tight">
-              Maremma raga <br /> ci si sposa
+              Maremma <br /> ci si sposa
             </h1>
           </div>
-          <h2 className="text-4xl md:text-7xl mb-6 text-gray-800 font-serif text-shadow-soft">
+          <h2 className="text-4xl md:text-8xl mb-6 text-gray-800 font-serif text-shadow-soft">
             Claudia & Lorenzo
           </h2>
           <div className="text-2xl md:text-4xl text-gray-700 mb-8 space-y-2 font-serif text-center">
@@ -98,14 +98,11 @@ export default function App() {
         </div>
       </section>
 
-      <Separator className="max-w-4xl mx-auto border-rose-200 opacity-50" />
-
       {/* Form Section */}
       <section className="py-12 md:py-16 px-4 bg-rose-50/30">
         <div className="max-w-2xl mx-auto">
-          <h2 className="text-3xl md:text-5xl text-center mb-4 text-gray-800 font-serif text-shadow-soft leading-tight">
+          <h2 className="text-4xl md:text-5xl text-center mb-4 text-gray-800 font-serif text-shadow-soft leading-tight">
             Invia la tua partecipazione entro il
-          //fateci saperese ci sarete
           </h2>
           <p className="text-center w-full text-5xl min-[450px]:text-6xl md:text-8xl text-rose-600 font-bold font-numbers tracking-tight leading-none my-4">
             31 04 2026
@@ -162,13 +159,14 @@ export default function App() {
               <Gift className="w-10 h-10 mx-auto mb-2 text-rose-500 drop-shadow-sm" />
               <CardTitle className="text-4xl font-serif">Regalo</CardTitle>
             </CardHeader>
-            <CardContent className="space-y-6 text-center px-6 pb-8">
-              <p>
+            <CardContent>
+              <p className="text-2xl font-medium font-serif underline decoration-rose-200">
+
                 Il regalo più grande per noi sarà festeggiare e celebrare questo giorno insieme a voi.
                 Se desiderate farci un dono, saremmo felici di ricevere un contributo per aiutarci a costruire il nostro futuro.
                 Ci teniamo a dirvi che il vostro dono sarà anche un aiuto concreto per gli altri:
                 una parte del vostro regalo sarà devoluta al sostegno di alcune famiglie
-                nella Striscia di Gaza (tramite l'impegno di
+                nella Striscia di Gaza grazie all'impegno di{" "}
                 <a
                   href="https://www.instagram.com/martaalacevich_illustrazioni"
                   target="_blank"
@@ -177,19 +175,18 @@ export default function App() {
                 >
                   @martaalacevich_illustrazioni
                 </a>
-                )
-                e alla missione di Llamellín in Perù (dell' Associazione Amici del Perù)
+                {" "}e alla missione di Llamellín in Perù (dell' Associazione Amici del Perù)<br></br>
               </p>
               {!showIban ? (
                 <Button variant="outline" className="w-full border-rose-200 text-rose-600 hover:bg-rose-50 font-semibold text-2xl py-6" onClick={() => setShowIban(true)}>Mostra IBAN</Button>
               ) : (
                 <div className="bg-rose-50 p-6 rounded-lg border border-rose-100 break-words font-numbers text-rose-900 shadow-inner animate-in zoom-in-95 duration-300 text-left">
                   <p className="text-2xl font-serif">
-                    <span className="italic text-rose-600/70 text-xl block leading-none mb-1">Iban:</span>
+                    <span className="italic text-rose-600/70 text-xl block leading-none mb-1"><br></br>Iban:</span>
                     <span className="font-semibold">{iban}</span>
                   </p>
 
-                  <Separator className="bg-rose-200 mb-4 opacity-50" />
+                  <Separator className="bg-rose-200 mb-4 opacity-100" />
 
                   <div className="space-y-3">
                     <p className="text-2xl font-serif">
