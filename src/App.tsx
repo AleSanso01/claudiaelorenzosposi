@@ -208,7 +208,7 @@ export default function App() {
                       onChange={(e) =>
                         handleInputChange("accompagnatori", e.target.value)
                       }
-                      placeholder="Anakin Skywalker, Chewbecca, ..."
+                      placeholder="Anakin Skywalker, Chewbecca "
                       disabled={isSubmitting}
                       className="min-h-[100px] bg-cream-light border-rose-200 focus:border-rose-400 font-serif text-xl"
                     />
