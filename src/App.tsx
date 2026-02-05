@@ -83,17 +83,20 @@ export default function App() {
         <div className="max-w-4xl mx-auto">
           <div className="mb-8">
             <Heart className="w-10 h-10 mx-auto mb-6 text-rose-500 drop-shadow-sm" />
-            <h1 className="text-red-600 text-6xl min-[400px]:text-7xl md:text-9xl font-serif mb-6 leading-[0.9] md:leading-tight">
-              Maremma <br /> ci si sposa
+            <h1 className="text-4xl md:text-8xl mb-6 text-gray-800 font-serif text-shadow-soft">
+              {/*  Maremma <br /> ci si sposa*/}
+              Claudia & Lorenzo
             </h1>
           </div>
-          <h2 className="text-4xl md:text-8xl mb-6 text-gray-800 font-serif text-shadow-soft">
-            Claudia & Lorenzo
-          </h2>
+          <h1 className="text-4xl md:text-8xl mb-6 text-gray-800 font-serif text-shadow-soft text-rose-600">
+            {/* Claudia & Lorenzo*/}
+            13 06 2026
+
+          </h1>
           <div className="text-2xl md:text-4xl text-gray-700 mb-8 space-y-2 font-serif text-center">
-            <p className="text-5xl min-[450px]:text-6xl md:text-8xl text-rose-600 font-bold font-numbers tracking-tight leading-none my-4">
+            {/*<p className="text-5xl min-[450px]:text-6xl md:text-8xl text-rose-600 font-bold font-numbers tracking-tight leading-none my-4">
               13 06 2026
-            </p>
+            </p>*/}
           </div>
         </div>
       </section>
@@ -102,11 +105,15 @@ export default function App() {
       <section className="py-12 md:py-16 px-4 bg-rose-50/30">
         <div className="max-w-2xl mx-auto">
           <h2 className="text-4xl md:text-5xl text-center mb-4 text-gray-800 font-serif text-shadow-soft leading-tight">
-            Invia la tua partecipazione entro il
+            {/*Invia la tua partecipazione entro il*/}
+            Confermate la vostra presenza entro il
           </h2>
-          <p className="text-center w-full text-5xl min-[450px]:text-6xl md:text-8xl text-rose-600 font-bold font-numbers tracking-tight leading-none my-4">
+          {/*<p className="text-center w-full text-5xl min-[450px]:text-6xl md:text-8xl text-rose-600 font-bold font-numbers tracking-tight leading-none my-4">
             31 04 2026
-          </p>
+          </p>*/}
+          <h2 className="text-4xl md:text-5xl text-center mb-4 text-rose-600 font-serif text-shadow-soft leading-tight">
+            31 04 2026
+          </h2>
 
           {rsvpSubmitted ? (
             <Card className="bg-cream backdrop-paper shadow-paper">
@@ -133,12 +140,12 @@ export default function App() {
 
                   <div>
                     <Label htmlFor="accompagnatori" className="text-2xl text-gray-700 font-serif mb-2 block">Accompagnatori:</Label>
-                    <Textarea id="accompagnatori" name="accompagnatori" value={formData.accompagnatori} onChange={(e) => handleInputChange("accompagnatori", e.target.value)} placeholder="Nomi di chi verrà con te" disabled={isSubmitting} className="min-h-[100px] bg-cream-light border-rose-200 focus:border-rose-400 font-serif text-xl" />
+                    <Textarea id="accompagnatori" name="accompagnatori" value={formData.accompagnatori} onChange={(e) => handleInputChange("accompagnatori", e.target.value)} placeholder="Anakin Skywalker" disabled={isSubmitting} className="min-h-[100px] bg-cream-light border-rose-200 focus:border-rose-400 font-serif text-xl" />
                   </div>
 
                   <div>
-                    <Label htmlFor="allergie" className="text-2xl text-gray-700 font-serif mb-2 block">Allergie/Intolleranze</Label>
-                    <Textarea id="allergie" name="allergie" value={formData.allergie} onChange={(e) => handleInputChange("allergie", e.target.value)} placeholder="Eventuali allergie" disabled={isSubmitting} className="min-h-[100px] bg-cream-light border-rose-200 focus:border-rose-400 font-serif text-xl" />
+                    <Label htmlFor="allergie" className="text-2xl text-gray-700 font-serif mb-2 block">Intolleranze</Label>
+                    <Textarea id="allergie" name="allergie" value={formData.allergie} onChange={(e) => handleInputChange("allergie", e.target.value)} placeholder="Lattosio, Nickel, Glutine..." disabled={isSubmitting} className="min-h-[100px] bg-cream-light border-rose-200 focus:border-rose-400 font-serif text-xl" />
                   </div>
 
                   <Button type="submit" className="w-full bg-rose-600 hover:bg-rose-700 text-white font-semibold py-8 shadow-paper transition-all duration-300 font-serif text-3xl" disabled={isSubmitting}>
@@ -157,12 +164,12 @@ export default function App() {
           <Card className="bg-cream backdrop-paper border-rose-200 shadow-paper max-w-lg w-full">
             <CardHeader className="text-center">
               <Gift className="w-10 h-10 mx-auto mb-2 text-rose-500 drop-shadow-sm" />
-              <CardTitle className="text-4xl font-serif">Regalo</CardTitle>
+              <CardTitle className="text-4xl text-rose-500 font-serif">Regalo</CardTitle>
             </CardHeader>
             <CardContent>
               <p className="text-2xl font-medium font-serif underline decoration-rose-200">
 
-                Il regalo più grande per noi sarà festeggiare e celebrare questo giorno insieme a voi.
+                Il regalo più grande per noi sarà celebrare e festeggiare questo giorno insieme a voi.
                 Se desiderate farci un dono, saremmo felici di ricevere un contributo per aiutarci a costruire il nostro futuro.
                 Ci teniamo a dirvi che il vostro dono sarà anche un aiuto concreto per gli altri:
                 una parte del vostro regalo sarà devoluta al sostegno di alcune famiglie
@@ -214,7 +221,7 @@ export default function App() {
             <div className="grid md:grid-cols-2 gap-8">
               <Card className="bg-cream backdrop-paper border-rose-200 flex flex-col h-full shadow-paper">
                 <CardHeader className="text-center">
-                  <CardTitle className="text-4xl text-gray-800 font-serif">Cerimonia</CardTitle>
+                  <CardTitle className="text-4xl text-rose-500 font-serif">Cerimonia</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-6 px-6 pb-8">
                   <div className="flex items-center gap-4 pl-2">
@@ -230,7 +237,7 @@ export default function App() {
                         rel="noopener noreferrer"
                         className="hover:text-rose-700 underline decoration-rose-300 transition-colors"
                       >
-                        <p className="text-3xl font-medium font-serif underline decoration-rose-200" >
+                        <p className="text-2xl font-medium font-serif underline decoration-rose-200" >
                           Pieve di San Giovanni Battista
                         </p>
                         <p className="text-xl text-gray-600 italic font-serif mt-1">
@@ -244,7 +251,7 @@ export default function App() {
 
               <Card className="bg-cream backdrop-paper border-rose-200 flex flex-col h-full shadow-paper">
                 <CardHeader className="text-center">
-                  <CardTitle className="text-4xl text-gray-800 font-serif">Ricevimento</CardTitle>
+                  <CardTitle className="text-4xl text-rose-500 font-serif">Ricevimento</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-6 px-6 pb-8">
                   <div className="flex items-center gap-4 pl-2">
@@ -276,7 +283,7 @@ export default function App() {
               <Card className="bg-cream backdrop-paper border-rose-200 flex flex-col h-full shadow-paper">
                 <CardHeader className="text-center">
                   <Sparkles className="w-10 h-10 mx-auto mb-2 text-rose-500 drop-shadow-sm" />
-                  <CardTitle className="text-4xl text-gray-800 font-serif">Consigli Utili</CardTitle>
+                  <CardTitle className="text-4xl text-rose-500 font-serif">Consigli Utili</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-6 px-6 pb-8">
                   <div>
@@ -289,7 +296,7 @@ export default function App() {
                 <CardHeader className="text-center">
                   <Phone className="w-10 h-10 mx-auto mb-2 text-rose-500 drop-shadow-sm" />
 
-                  <CardTitle className="text-4xl text-gray-800 font-serif">Domande?</CardTitle>
+                  <CardTitle className="text-4xl text-rose-500 font-serif">Domande?</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-6 px-6 pb-8">
                   <div>
