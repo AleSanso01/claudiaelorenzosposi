@@ -132,7 +132,7 @@ export default function App() {
             30 04 2026
           </p>*/}
           <h2 className="text-4xl md:text-5xl text-center mb-4 text-rose-600 font-serif text-shadow-soft leading-tight">
-            31 04 2026
+            30 04 2026
           </h2>
 
           {rsvpSubmitted ? (
