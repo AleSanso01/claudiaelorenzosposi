@@ -199,7 +199,7 @@ export default function App() {
                       htmlFor="accompagnatori"
                       className="text-2xl text-gray-700 font-serif mb-2 block"
                     >
-                      Accompagnatori
+                      Nome di tutte le persone invitate insieme a te
                     </Label>
                     <Textarea
                       id="accompagnatori"
