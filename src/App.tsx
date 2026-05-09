@@ -134,13 +134,11 @@ export default function App() {
             </CardHeader>
             <CardContent>
               <p className="text-2xl font-medium font-serif underline decoration-rose-200">
-                Il regalo più grande per noi sarà celebrare e festeggiare questo
-                giorno insieme a voi. Se desiderate farci un dono, saremmo
-                felici di ricevere un contributo per aiutarci a costruire il
-                nostro futuro. Ci teniamo a dirvi che il vostro dono sarà anche
-                un aiuto concreto per gli altri: una parte del vostro regalo
-                sarà devoluta al sostegno di alcune famiglie nella Striscia di
-                Gaza grazie all'impegno di{" "}
+                Il regalo più grande per noi sarà celebrare e festeggiare questo giorno insieme a voi.
+Se desiderate farci un dono, saremmo felici di ricevere un contributo per aiutarci a costruire il nostro futuro.
+Ci teniamo a dirvi che il vostro dono sarà anche un aiuto concreto per gli altri: una parte del vostro regalo 
+                sarà devoluta al sostegno di alcune famiglie nella Striscia di Gaza grazie all’impegno di 
+                {" "}
                 <a
                   href="https://www.instagram.com/martaalacevich_illustrazioni"
                   target="_blank"
@@ -149,8 +147,9 @@ export default function App() {
                 >
                   @martaalacevich_illustrazioni
                 </a>{" "}
-                e alla missione di Llamellín in Perù (dell' Associazione Amici
-                del Perù)<br></br>
+                , alla missione di Llamellín in Perù dell’Associazione Amici del Perù e al sostegno 
+                della popolazione ucraina tramite l'associazione l’Ovunque, impegnata in missioni di 
+                aiuto e solidarietà.<br></br>
               </p>
               {!showIban ? (
                 <Button
